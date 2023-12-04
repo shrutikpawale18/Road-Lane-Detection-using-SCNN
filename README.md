@@ -18,4 +18,10 @@ The dataset utilized for training includes a diverse set of images that simulate
 
 The SCNN-based system demonstrates significant potential for enhancing vehicular navigation and safety, marking a step forward in the development of autonomous driving technology. 
 
- 
+Dataset
+
+Implemented on the CULane dataset. The training is done on driver_161_90frame and testing is done on driver_37_30frame. Please change Dataset_Path and if you want to train and test on other sets then update the createIndex and createIndex_test of the CULane class.
+
+Accordingly adjust the root path in utils/lane_evaluation/CULane/Run.sh.
+![image](https://github.com/shrutikpawale18/Road-Lane-Detection-using-SCNN/assets/62182782/16cda765-80ed-4797-82ad-84fb9b1acf16)
+
