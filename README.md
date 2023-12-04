@@ -30,11 +30,7 @@ Accordingly adjust the root path in `utils/lane_evaluation/CULane/Run.sh`.
 
 For single image demo test:
 
-```shell
-python demo_test.py   -i demo/demo.jpg 
-                      -w experiments/vgg_SCNN_DULR_w9/vgg_SCNN_DULR_w9.pth 
-                      [--visualize / -v]
-```
+Refer to `Demo_Test.py`
 
 ![](demo/demo_result.jpg "demo_result")
 
@@ -44,20 +40,20 @@ python demo_test.py   -i demo/demo.jpg
 
 ## Train 
 
-1. Specify an experiment directory, e.g. `experiments/exp0`. 
+1. Specify an experiment directory, e.g. `experiments/exp10`. 
 
-2. Modify the hyperparameters in `experiments/exp0/cfg.json`.
+2. Modify the hyperparameters in `experiments/exp10/cfg.json`.
 
 3. Start training:
 
    ```shell
-   python train.py --exp_dir ./experiments/exp0 [--resume/-r]
+   python train.py --exp_dir ./experiments/exp10 [--resume/-r]
    ```
 
 4. Monitor on tensorboard:
 
    ```bash
-   tensorboard --logdir='experiments/exp0'
+   tensorboard --logdir='experiments/exp10'
    ```
 
 **Note**
